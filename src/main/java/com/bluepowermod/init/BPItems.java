@@ -139,10 +139,10 @@ public class BPItems {
 
     public static void init() {
 
-//        if (!Loader.isModLoaded("ForgeMicroblock")) {// FMP already has an iron and diamond saw
-//            iron_saw = new ItemSaw(2, Refs.IRONSAW_NAME);
-//            diamond_saw = new ItemSaw(3, Refs.DIAMONDSAW_NAME);
-//        }
+        if (!Loader.isModLoaded("ForgeMicroblock")) {// FMP already has an iron and diamond saw
+            iron_saw = new ItemSaw(2, Refs.IRONSAW_NAME);
+            diamond_saw = new ItemSaw(3, Refs.DIAMONDSAW_NAME);
+        }
 
         initializeItems();
         registerItems();
@@ -187,7 +187,7 @@ public class BPItems {
         blue_doped_wafer = new ItemCrafting(Refs.BLUEDOPEDWAFER_NAME).setCreativeTab(BPCreativeTabs.items);
         //infused_teslatite_dust = new ItemCrafting(Refs.INFUSEDTESLATITEDUST_NAME);
         screwdriver = new ItemScrewdriver();
-//        silky_screwdriver = new ItemSilkyScrewdriver();
+        silky_screwdriver = new ItemSilkyScrewdriver();
 //        athame = new ItemAthame();
         zincplate = new ItemCrafting(Refs.ZINCPLATE_NAME);
         stone_tile = new ItemCrafting(Refs.STONETILE_NAME);
@@ -299,7 +299,7 @@ public class BPItems {
         GameRegistry.registerItem(blue_doped_wafer, Refs.BLUEDOPEDWAFER_NAME);
         GameRegistry.registerItem(red_doped_wafer, Refs.REDDOPEDWAFER_NAME);
         GameRegistry.registerItem(screwdriver, Refs.SCREWDRIVER_NAME);
-//        GameRegistry.registerItem(silky_screwdriver, Refs.SILKYSCREWDRIVER_NAME);
+        GameRegistry.registerItem(silky_screwdriver, Refs.SILKYSCREWDRIVER_NAME);
 //        GameRegistry.registerItem(athame, Refs.ATHAME_NAME);
         GameRegistry.registerItem(zincplate, Refs.ZINCPLATE_NAME);
 //        GameRegistry.registerItem(infused_teslatite_dust, Refs.INFUSEDTESLATITEDUST_NAME);

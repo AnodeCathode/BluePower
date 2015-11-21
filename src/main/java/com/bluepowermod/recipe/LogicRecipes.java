@@ -73,7 +73,7 @@ public class LogicRecipes {
         // "stickWood", 'R', BPItems.red_alloy_ingot, 'C', BPItems.stone_cathode)));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(BPItems.tainted_silicon_chip_tile, 1), BPOredictNames.SILICON_CHIP,
                 Items.glowstone_dust));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.quartz_resonator_tile, 3), " # ", "###", "WWW", '#', "gemQuartz", 'W',
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.quartz_resonator_tile, 3), " # ", "###", "WWW", '#', "oreJet", 'W',
                 BPOredictNames.STONE_TILE));
 
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.stone_bundle, 1), "#", "W", '#', "wireBundled", 'W',
@@ -111,7 +111,7 @@ public class LogicRecipes {
             ItemStack bundled = PartManager.getPartInfo("wire." + t.getName() + ".bundled").getStack(1);
             ItemStack freestanding = PartManager.getPartInfo("wire.freestanding." + t.getName() + ".bundled").getStack(1);
 
-            GameRegistry.addRecipe(new ShapedOreRecipe(bundled, "sws", "www", "sws", 'w', t.getName() + "Insulated", 's', Items.string));
+            GameRegistry.addRecipe(new ShapedOreRecipe(bundled, "sws", "www", "sws", 'w', t.getName() + "Insulated", 's', "materialString"));
             GameRegistry.addRecipe(new ShapedOreRecipe(freestanding, " s ", "sws", " s ", 's', "stickWood", 'w', bundled.copy()));
 
             for (MinecraftColor c : MinecraftColor.VALID_COLORS) {
