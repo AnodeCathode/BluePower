@@ -24,6 +24,7 @@ import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
+import com.bioxx.tfc.api.TFCItems;
 import com.bluepowermod.init.BPBlocks;
 import com.bluepowermod.init.BPItems;
 import com.bluepowermod.part.PartManager;
@@ -54,9 +55,9 @@ public class MachineRecipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(PartManager.getPartInfo("magTube").getStack(8), "CCC", "BGB", "CCC", 'B',
                 Blocks.obsidian, 'G', "blockGlass", 'C', BPItems.copper_wire));
         GameRegistry.addRecipe(new ShapedOreRecipe(PartManager.getPartInfo("accelerator").getStack(), "OIO", "I I", "OIO", 'O',
-                Blocks.obsidian, 'I', "ingotBlueAlloy"));
+                Blocks.obsidian, 'I', "ingotBlueSteel"));
         GameRegistry.addRecipe(new ShapedOreRecipe(PartManager.getPartInfo("accelerator").getStack(), "IOI", "O O", "IOI", 'O',
-                Blocks.obsidian, 'I', "ingotBlueAlloy"));
+                Blocks.obsidian, 'I', "ingotBlueSteel"));
 
         // Paint
         GameRegistry.addRecipe(new ItemStack(BPItems.paint_can, 1, 16), "t t", "t t", "ttt", 't', BPItems.zincplate);
@@ -65,8 +66,8 @@ public class MachineRecipes {
         for (int i = 0; i < Refs.oreDictDyes.length; i++) {
             GameRegistry.addShapelessRecipe(new ItemStack(BPItems.paint_brush, 1, i), new ItemStack(BPItems.paint_can, 1, i),
                     new ItemStack(BPItems.paint_brush, 1, OreDictionary.WILDCARD_VALUE));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(BPItems.paint_can, 1, i), new ItemStack(BPItems.flax_seeds),
-                    new ItemStack(BPItems.flax_seeds), Refs.oreDictDyes[i], new ItemStack(BPItems.paint_can, 1, 16)));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(BPItems.paint_can, 1, i), new ItemStack(Items.blaze_powder),
+                    new ItemStack(Items.blaze_powder), Refs.oreDictDyes[i], new ItemStack(BPItems.paint_can, 1, 16)));
         }
 
         // Blocks
@@ -86,16 +87,16 @@ public class MachineRecipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.regulator, 1), "IBI", "WDW", "PBP", 'I', "ingotBrass", 'B',
                 BPBlocks.buffer, 'W', BPItems.red_doped_wafer, 'D', BPBlocks.item_detector, 'P', "plankWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.retriever, 1), "BLB", "EFE", "IAI", 'B', "ingotBrass", 'L',
-                Items.leather, 'E', Items.ender_pearl, 'F', BPBlocks.filter, 'I', "ingotIron", 'A', "ingotBlueAlloy"));
+                TFCItems.leather, 'E', Items.ender_pearl, 'F', BPBlocks.filter, 'I', "ingotIron", 'A', "ingotBlueSteel"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.filter, 1), "CCC", "GPG", "CWC", 'C', "cobblestone", 'G',
                 "ingotGold", 'P', Blocks.piston, 'W', BPItems.red_doped_wafer));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.sorting_machine, 1), "CCC", "GPG", "CWC", 'C', "ingotIron", 'G',
-                BPItems.red_doped_wafer, 'P', BPBlocks.filter, 'W', "ingotBlueAlloy"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.igniter, 1), "NFN", "CDC", "CRC", 'C', "cobblestone", 'N',
-                Blocks.netherrack, 'F', Items.flint_and_steel, 'R', "dustRedstone", 'D', BPBlocks.deployer));
+                BPItems.red_doped_wafer, 'P', BPBlocks.filter, 'W', "ingotBlueSteel"));
+//        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.igniter, 1), "NFN", "CDC", "CRC", 'C', "cobblestone", 'N',
+//                Blocks.netherrack, 'F', "toolFlintSteel", 'R', "dustRedstone", 'D', BPBlocks.deployer));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.deployer, 1), "CIC", "CPC", "CRC", 'C', "cobblestone", 'I',
-                Blocks.chest, 'P', Blocks.piston, 'R', "dustRedstone"));
+                "chestWood", 'P', Blocks.piston, 'R', "dustRedstone"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.manager, 1), "IRI", "WSW", "PBP", 'I', "ingotIron", 'R',
-                BPBlocks.regulator, 'P', "plankWood", 'W', BPItems.red_doped_wafer, 'B', "ingotBlueAlloy", 'S', BPBlocks.sorting_machine));
+                BPBlocks.regulator, 'P', "plankWood", 'W', BPItems.red_doped_wafer, 'B', "ingotBlueSteel", 'S', BPBlocks.sorting_machine));
     }
 }

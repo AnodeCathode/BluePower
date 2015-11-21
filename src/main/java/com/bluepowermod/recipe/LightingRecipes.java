@@ -61,7 +61,7 @@ public class LightingRecipes {
                     "paneGlassColorless", 'c', Blocks.iron_bars, 's', new ItemStack(Blocks.stone_slab, 1, 0), 'L', new ItemStack(BPItems.lumar, 1,
                             15 - i), 'R', "dustRedstone"));
             GameRegistry.addRecipe(new ShapedOreRecipe(PartManager.getPartInfo("cagelamp." + colorname + ".inverted").getStack(), "cLc", "gLg",
-                    "sRs", 'g', "paneGlassColorless", 'c', Blocks.iron_bars, 's', new ItemStack(Blocks.stone_slab, 1, 0), 'L', new ItemStack(
+                    "sRs", 'g', "paneGlassColorless", 'c', "barsIron", 's', new ItemStack(Blocks.stone_slab, 1, 0), 'L', new ItemStack(
                             BPItems.lumar, 1, 15 - i), 'R', Blocks.redstone_torch));
 
         }

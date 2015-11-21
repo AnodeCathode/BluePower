@@ -156,53 +156,53 @@ public class BPBlocks {
 
     private static void instantiateBlocks() {
 
-        basalt = new BlockBasalt(Refs.BASALT_NAME).setResistance(25.0F);
-        marble = new BlockStoneOre(Refs.MARBLE_NAME).setResistance(1.0F).setHardness(1.5F);
-        basalt_cobble = new BlockStoneOre(Refs.BASALTCOBBLE_NAME);
-        basalt_brick = new BlockStoneOre(Refs.BASALTBRICK_NAME);
-        marble_brick = new BlockStoneOre(Refs.MARBLEBRICK_NAME);
-        cracked_basalt_lava = new BlockCrackedBasalt(Refs.CRACKED_BASALT);
+//        basalt = new BlockBasalt(Refs.BASALT_NAME).setResistance(25.0F);
+//        marble = new BlockStoneOre(Refs.MARBLE_NAME).setResistance(1.0F).setHardness(1.5F);
+//        basalt_cobble = new BlockStoneOre(Refs.BASALTCOBBLE_NAME);
+//        basalt_brick = new BlockStoneOre(Refs.BASALTBRICK_NAME);
+//        marble_brick = new BlockStoneOre(Refs.MARBLEBRICK_NAME);
+//        cracked_basalt_lava = new BlockCrackedBasalt(Refs.CRACKED_BASALT);
+//
+//        basaltbrick_cracked = new BlockStoneOre(Refs.CRACKEDBASALTBRICK_NAME);
+//        basalt_brick_small = new BlockStoneOre(Refs.SMALLBASALTBRICK_NAME);
+//        marble_brick_small = new BlockStoneOre(Refs.SMALLMARBLEBRICK_NAME);
+//        fancy_basalt = new BlockStoneOre(Refs.CHISELEDBASALTBRICK_NAME);
+//        fancy_marble = new BlockStoneOre(Refs.CHISELEDMARBLEBRICK_NAME);
+//        marble_tile = new BlockStoneOreConnected(Refs.MARBLETILE_NAME);
+//        basalt_tile = new BlockStoneOreConnected(Refs.BASALTTILE_NAME);
+//        marble_paver = new BlockStoneOre(Refs.MARBLEPAVER_NAME);
+//        basalt_paver = new BlockStoneOre(Refs.BASALTPAVER_NAME);
+//        tiles = new BlockStoneOre(Refs.TILES);
 
-        basaltbrick_cracked = new BlockStoneOre(Refs.CRACKEDBASALTBRICK_NAME);
-        basalt_brick_small = new BlockStoneOre(Refs.SMALLBASALTBRICK_NAME);
-        marble_brick_small = new BlockStoneOre(Refs.SMALLMARBLEBRICK_NAME);
-        fancy_basalt = new BlockStoneOre(Refs.CHISELEDBASALTBRICK_NAME);
-        fancy_marble = new BlockStoneOre(Refs.CHISELEDMARBLEBRICK_NAME);
-        marble_tile = new BlockStoneOreConnected(Refs.MARBLETILE_NAME);
-        basalt_tile = new BlockStoneOreConnected(Refs.BASALTTILE_NAME);
-        marble_paver = new BlockStoneOre(Refs.MARBLEPAVER_NAME);
-        basalt_paver = new BlockStoneOre(Refs.BASALTPAVER_NAME);
-        tiles = new BlockStoneOre(Refs.TILES);
-
-        teslatite_ore = new BlockTeslatiteOre(Refs.TESLATITEORE_NAME);
-        ruby_ore = new BlockRubyOre(Refs.RUBYORE_NAME);
-        sapphire_ore = new BlockSapphireOre(Refs.SAPPHIREORE_NAME);
-        amethyst_ore = new BlockAmethystOre(Refs.AMETHYSTORE_NAME);
-
-        copper_ore = new BlockStoneOre(Refs.COPPERORE_NAME);
-        silver_ore = new BlockStoneOre(Refs.SILVERORE_NAME).setToolLevel(2);
-        zinc_ore = new BlockStoneOre(Refs.ZINCORE_NAME);
+//        teslatite_ore = new BlockTeslatiteOre(Refs.TESLATITEORE_NAME);
+//        ruby_ore = new BlockRubyOre(Refs.RUBYORE_NAME);
+//        sapphire_ore = new BlockSapphireOre(Refs.SAPPHIREORE_NAME);
+//        amethyst_ore = new BlockAmethystOre(Refs.AMETHYSTORE_NAME);
+//
+//        copper_ore = new BlockStoneOre(Refs.COPPERORE_NAME);
+//        silver_ore = new BlockStoneOre(Refs.SILVERORE_NAME).setToolLevel(2);
+//        zinc_ore = new BlockStoneOre(Refs.ZINCORE_NAME);
         tungsten_ore = new BlockStoneOre(Refs.TUNGSTENORE_NAME).setToolLevel(3).setResistance(6.0F).setHardness(15.0F);
 
-        ruby_block = new BlockStoneOre(Refs.RUBYBLOCK_NAME).setToolLevel(2);
-        sapphire_block = new BlockStoneOre(Refs.SAPPHIREBLOCK_NAME).setToolLevel(2);
-        amethyst_block = new BlockStoneOre(Refs.AMETHYSTBLOCK_NAME).setToolLevel(2);
-        teslatite_block = new BlockStoneOre(Refs.TESLATITEBLOCK_NAME).setToolLevel(2);
-        copper_block = new BlockStoneOre(Refs.COPPERBLOCK_NAME);
-        silver_block = new BlockStoneOre(Refs.SILVERBLOCK_NAME).setToolLevel(2);
-        zinc_block = new BlockStoneOre(Refs.ZINCBLOCK_NAME);
+//        ruby_block = new BlockStoneOre(Refs.RUBYBLOCK_NAME).setToolLevel(2);
+//        sapphire_block = new BlockStoneOre(Refs.SAPPHIREBLOCK_NAME).setToolLevel(2);
+//        amethyst_block = new BlockStoneOre(Refs.AMETHYSTBLOCK_NAME).setToolLevel(2);
+//        teslatite_block = new BlockStoneOre(Refs.TESLATITEBLOCK_NAME).setToolLevel(2);
+//        copper_block = new BlockStoneOre(Refs.COPPERBLOCK_NAME);
+//        silver_block = new BlockStoneOre(Refs.SILVERBLOCK_NAME).setToolLevel(2);
+//        zinc_block = new BlockStoneOre(Refs.ZINCBLOCK_NAME);
         tungsten_block = new BlockStoneOre(Refs.TUNGSTENBLOCK_NAME).setToolLevel(3).setResistance(25.0F).setHardness(5.0F);
 
         sapphire_glass = new BlockStoneOreConnected(Refs.SAPPHIREGLASS_NAME).setTransparent(true).setHardness(10).setResistance(10000);
         reinforced_sapphire_glass = new BlockStoneOreConnected(Refs.REINFORCEDSAPPHIREGLASS_NAME).setTransparent(true).setWitherproof(true)
                 .setTooltip(MinecraftColor.RED.getChatColor() + "Witherproof").setHardness(30).setResistance(Integer.MAX_VALUE);
 
-        flax_crop = new BlockCrop().setBlockName(Refs.FLAXCROP_NAME);
-        indigo_flower = new BlockCustomFlower(Refs.INDIGOFLOWER_NAME);
+//        flax_crop = new BlockCrop().setBlockName(Refs.FLAXCROP_NAME);
+//        indigo_flower = new BlockCustomFlower(Refs.INDIGOFLOWER_NAME);
 
         alloyfurnace = new BlockAlloyFurnace();
         block_breaker = new BlockContainerFrontRender(Material.rock, TileBlockBreaker.class).setBlockName(Refs.BLOCKBREAKER_NAME);
-        igniter = new BlockIgniter();
+//        igniter = new BlockIgniter();
         buffer = new BlockContainerBase(Material.rock, TileBuffer.class).setGuiId(GuiIDs.BUFFER).setBlockName(Refs.BLOCKBUFFER_NAME);
         deployer = new BlockContainerFrontRender(Material.rock, TileDeployer.class).setGuiId(GuiIDs.DEPLOYER_ID)
                 .setBlockName(Refs.BLOCKDEPLOYER_NAME);
@@ -248,52 +248,52 @@ public class BPBlocks {
 
     private static void registerBlocks() {
 
-        GameRegistry.registerBlock(basalt, Refs.BASALT_NAME);
-        GameRegistry.registerBlock(basalt_cobble, Refs.BASALTCOBBLE_NAME);
-        GameRegistry.registerBlock(basalt_brick, Refs.BASALTBRICK_NAME);
-        GameRegistry.registerBlock(basaltbrick_cracked, Refs.CRACKEDBASALTBRICK_NAME);
-        GameRegistry.registerBlock(fancy_basalt, Refs.CHISELEDBASALTBRICK_NAME);
-        GameRegistry.registerBlock(basalt_brick_small, Refs.SMALLBASALTBRICK_NAME);
-        GameRegistry.registerBlock(cracked_basalt_lava, Refs.CRACKED_BASALT);
-        GameRegistry.registerBlock(basalt_tile, Refs.BASALTTILE_NAME);
-        GameRegistry.registerBlock(basalt_paver, Refs.BASALTPAVER_NAME);
+//        GameRegistry.registerBlock(basalt, Refs.BASALT_NAME);
+//        GameRegistry.registerBlock(basalt_cobble, Refs.BASALTCOBBLE_NAME);
+//        GameRegistry.registerBlock(basalt_brick, Refs.BASALTBRICK_NAME);
+//        GameRegistry.registerBlock(basaltbrick_cracked, Refs.CRACKEDBASALTBRICK_NAME);
+//        GameRegistry.registerBlock(fancy_basalt, Refs.CHISELEDBASALTBRICK_NAME);
+//        GameRegistry.registerBlock(basalt_brick_small, Refs.SMALLBASALTBRICK_NAME);
+//        GameRegistry.registerBlock(cracked_basalt_lava, Refs.CRACKED_BASALT);
+//        GameRegistry.registerBlock(basalt_tile, Refs.BASALTTILE_NAME);
+//        GameRegistry.registerBlock(basalt_paver, Refs.BASALTPAVER_NAME);
+//
+//        GameRegistry.registerBlock(marble, Refs.MARBLE_NAME);
+//        GameRegistry.registerBlock(marble_brick, Refs.MARBLEBRICK_NAME);
+//        GameRegistry.registerBlock(fancy_marble, Refs.CHISELEDMARBLEBRICK_NAME);
+//        GameRegistry.registerBlock(marble_brick_small, Refs.SMALLMARBLEBRICK_NAME);
+//        GameRegistry.registerBlock(marble_tile, Refs.MARBLETILE_NAME);
+//        GameRegistry.registerBlock(marble_paver, Refs.MARBLEPAVER_NAME);
+//        GameRegistry.registerBlock(tiles, Refs.TILES_NAME);
 
-        GameRegistry.registerBlock(marble, Refs.MARBLE_NAME);
-        GameRegistry.registerBlock(marble_brick, Refs.MARBLEBRICK_NAME);
-        GameRegistry.registerBlock(fancy_marble, Refs.CHISELEDMARBLEBRICK_NAME);
-        GameRegistry.registerBlock(marble_brick_small, Refs.SMALLMARBLEBRICK_NAME);
-        GameRegistry.registerBlock(marble_tile, Refs.MARBLETILE_NAME);
-        GameRegistry.registerBlock(marble_paver, Refs.MARBLEPAVER_NAME);
-        GameRegistry.registerBlock(tiles, Refs.TILES_NAME);
-
-        GameRegistry.registerBlock(teslatite_ore, Refs.TESLATITEORE_NAME);
-        GameRegistry.registerBlock(copper_ore, Refs.COPPERORE_NAME);
-        GameRegistry.registerBlock(silver_ore, Refs.SILVERORE_NAME);
-        GameRegistry.registerBlock(zinc_ore, Refs.ZINCORE_NAME);
+//        GameRegistry.registerBlock(teslatite_ore, Refs.TESLATITEORE_NAME);
+//        GameRegistry.registerBlock(copper_ore, Refs.COPPERORE_NAME);
+//        GameRegistry.registerBlock(silver_ore, Refs.SILVERORE_NAME);
+//        GameRegistry.registerBlock(zinc_ore, Refs.ZINCORE_NAME);
         GameRegistry.registerBlock(tungsten_ore, Refs.TUNGSTENORE_NAME);
-        GameRegistry.registerBlock(ruby_ore, Refs.RUBYORE_NAME);
-        GameRegistry.registerBlock(sapphire_ore, Refs.SAPPHIREORE_NAME);
-        GameRegistry.registerBlock(amethyst_ore, Refs.AMETHYSTORE_NAME);
+//        GameRegistry.registerBlock(ruby_ore, Refs.RUBYORE_NAME);
+//        GameRegistry.registerBlock(sapphire_ore, Refs.SAPPHIREORE_NAME);
+//        GameRegistry.registerBlock(amethyst_ore, Refs.AMETHYSTORE_NAME);
 
-        GameRegistry.registerBlock(ruby_block, Refs.RUBYBLOCK_NAME);
-        GameRegistry.registerBlock(sapphire_block, Refs.SAPPHIREBLOCK_NAME);
-        GameRegistry.registerBlock(amethyst_block, Refs.AMETHYSTBLOCK_NAME);
-        GameRegistry.registerBlock(teslatite_block, Refs.TESLATITEBLOCK_NAME);
-        GameRegistry.registerBlock(copper_block, Refs.COPPERBLOCK_NAME);
-        GameRegistry.registerBlock(silver_block, Refs.SILVERBLOCK_NAME);
-        GameRegistry.registerBlock(zinc_block, Refs.ZINCBLOCK_NAME);
+//        GameRegistry.registerBlock(ruby_block, Refs.RUBYBLOCK_NAME);
+//        GameRegistry.registerBlock(sapphire_block, Refs.SAPPHIREBLOCK_NAME);
+//        GameRegistry.registerBlock(amethyst_block, Refs.AMETHYSTBLOCK_NAME);
+//        GameRegistry.registerBlock(teslatite_block, Refs.TESLATITEBLOCK_NAME);
+//        GameRegistry.registerBlock(copper_block, Refs.COPPERBLOCK_NAME);
+//        GameRegistry.registerBlock(silver_block, Refs.SILVERBLOCK_NAME);
+//        GameRegistry.registerBlock(zinc_block, Refs.ZINCBLOCK_NAME);
         GameRegistry.registerBlock(tungsten_block, Refs.TUNGSTENBLOCK_NAME);
 
         GameRegistry.registerBlock(sapphire_glass, Refs.SAPPHIREGLASS_NAME);
         GameRegistry.registerBlock(reinforced_sapphire_glass, ItemBlockTooltip.class, Refs.REINFORCEDSAPPHIREGLASS_NAME);
 
-        GameRegistry.registerBlock(flax_crop, Refs.FLAXCROP_NAME);
-        GameRegistry.registerBlock(indigo_flower, Refs.INDIGOFLOWER_NAME);
+//      GameRegistry.registerBlock(flax_crop, Refs.FLAXCROP_NAME);
+//        GameRegistry.registerBlock(indigo_flower, Refs.INDIGOFLOWER_NAME);
 
         GameRegistry.registerBlock(alloyfurnace, Refs.ALLOYFURNACE_NAME);
         GameRegistry.registerBlock(sorting_machine, Refs.SORTING_MACHINE_NAME);
         GameRegistry.registerBlock(block_breaker, Refs.BLOCKBREAKER_NAME);
-        GameRegistry.registerBlock(igniter, Refs.BLOCKIGNITER_NAME);
+//        GameRegistry.registerBlock(igniter, Refs.BLOCKIGNITER_NAME);
         GameRegistry.registerBlock(buffer, Refs.BLOCKBUFFER_NAME);
         GameRegistry.registerBlock(deployer, Refs.BLOCKDEPLOYER_NAME);
         GameRegistry.registerBlock(project_table, Refs.PROJECTTABLE_NAME);

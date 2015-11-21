@@ -44,14 +44,14 @@ public class LogicRecipes {
     public static void init() {
 
         // Components
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_wire_tile, 1), "#", "W", '#', "dustTeslatite", 'W',
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_wire_tile, 1), "#", "W", '#', "dustRedstone", 'W',
                 BPOredictNames.STONE_TILE));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_anode_tile, 3), " # ", "###", "WWW", '#', "dustTeslatite", 'W',
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_anode_tile, 3), " # ", "###", "WWW", '#', "dustRedstone", 'W',
                 BPOredictNames.STONE_TILE));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_cathode_tile, 1), "T#T", " W ", 'T', "dustTeslatite", '#',
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_cathode_tile, 1), "T#T", " W ", 'T', "dustRedstone", '#',
                 Blocks.redstone_torch, 'W', BPOredictNames.STONE_TILE));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_pointer_tile, 1), " S ", "T#T", " W ", 'S', "stone", '#',
-                Blocks.redstone_torch, 'W', BPOredictNames.STONE_TILE, 'T', "dustTeslatite"));
+                Blocks.redstone_torch, 'W', BPOredictNames.STONE_TILE, 'T', "dustRedstone"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_pointer_tile, 1), "S", "T", 'S', "stone", 'T',
                 BPOredictNames.BLUESTONE_CATHODE));
 

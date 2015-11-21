@@ -45,32 +45,32 @@ public class CompatModuleFMP extends CompatModule {
 
     private void registerBlocksAsMicroblock() {
 
-        registerBlockAsMicroblock(BPBlocks.basalt);
-        registerBlockAsMicroblock(BPBlocks.basalt_brick);
-        registerBlockAsMicroblock(BPBlocks.basalt_brick_small);
-        registerBlockAsMicroblock(BPBlocks.basalt_cobble);
-        registerBlockAsMicroblock(BPBlocks.basalt_tile);
-        registerBlockAsMicroblock(BPBlocks.basalt_paver);
+//        registerBlockAsMicroblock(BPBlocks.basalt);
+//        registerBlockAsMicroblock(BPBlocks.basalt_brick);
+//        registerBlockAsMicroblock(BPBlocks.basalt_brick_small);
+//        registerBlockAsMicroblock(BPBlocks.basalt_cobble);
+//        registerBlockAsMicroblock(BPBlocks.basalt_tile);
+//        registerBlockAsMicroblock(BPBlocks.basalt_paver);
+//
+//        registerBlockAsMicroblock(BPBlocks.fancy_basalt);
+//        registerBlockAsMicroblock(BPBlocks.fancy_marble);
+//
+//        registerBlockAsMicroblock(BPBlocks.marble);
+//        registerBlockAsMicroblock(BPBlocks.marble_brick);
+//        registerBlockAsMicroblock(BPBlocks.marble_brick_small);
+//        registerBlockAsMicroblock(BPBlocks.marble_tile);
+//        registerBlockAsMicroblock(BPBlocks.marble_paver);
 
-        registerBlockAsMicroblock(BPBlocks.fancy_basalt);
-        registerBlockAsMicroblock(BPBlocks.fancy_marble);
-
-        registerBlockAsMicroblock(BPBlocks.marble);
-        registerBlockAsMicroblock(BPBlocks.marble_brick);
-        registerBlockAsMicroblock(BPBlocks.marble_brick_small);
-        registerBlockAsMicroblock(BPBlocks.marble_tile);
-        registerBlockAsMicroblock(BPBlocks.marble_paver);
-
-        registerBlockAsMicroblock(BPBlocks.tiles);
+//        registerBlockAsMicroblock(BPBlocks.tiles);
 
         registerBlockAsMicroblock(BPBlocks.tungsten_block);
-        registerBlockAsMicroblock(BPBlocks.teslatite_block);
-        registerBlockAsMicroblock(BPBlocks.amethyst_block);
-        registerBlockAsMicroblock(BPBlocks.ruby_block);
-        registerBlockAsMicroblock(BPBlocks.sapphire_block);
-        registerBlockAsMicroblock(BPBlocks.copper_block);
-        registerBlockAsMicroblock(BPBlocks.silver_block);
-        registerBlockAsMicroblock(BPBlocks.zinc_block);
+//        registerBlockAsMicroblock(BPBlocks.teslatite_block);
+//        registerBlockAsMicroblock(BPBlocks.amethyst_block);
+//        registerBlockAsMicroblock(BPBlocks.ruby_block);
+//        registerBlockAsMicroblock(BPBlocks.sapphire_block);
+//        registerBlockAsMicroblock(BPBlocks.copper_block);
+//        registerBlockAsMicroblock(BPBlocks.silver_block);
+//        registerBlockAsMicroblock(BPBlocks.zinc_block);
     }
 
     private void registerBlockAsMicroblock(Block b) {
@@ -92,10 +92,10 @@ public class CompatModuleFMP extends CompatModule {
     @SideOnly(Side.CLIENT)
     public void registerRenders() {
 
-        SawRenderFMP sawRender = new SawRenderFMP();
-        MinecraftForgeClient.registerItemRenderer(BPItems.ruby_saw, sawRender);
-        MinecraftForgeClient.registerItemRenderer(BPItems.amethyst_saw, sawRender);
-        MinecraftForgeClient.registerItemRenderer(BPItems.sapphire_saw, sawRender);
+//        SawRenderFMP sawRender = new SawRenderFMP();
+//        MinecraftForgeClient.registerItemRenderer(BPItems.ruby_saw, sawRender);
+//        MinecraftForgeClient.registerItemRenderer(BPItems.amethyst_saw, sawRender);
+//        MinecraftForgeClient.registerItemRenderer(BPItems.sapphire_saw, sawRender);
     }
 
 }

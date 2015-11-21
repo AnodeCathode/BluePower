@@ -41,14 +41,14 @@ public class OreDictionarySetup {
         OreDictionary.registerOre(BPOredictNames.ORE_SAPPHIRE, BPBlocks.sapphire_ore);
 
         // Storage blocks
-        OreDictionary.registerOre(BPOredictNames.BLOCK_COPPER, BPBlocks.copper_block);
-        OreDictionary.registerOre(BPOredictNames.BLOCK_ZINC, BPBlocks.zinc_block);
-        OreDictionary.registerOre(BPOredictNames.BLOCK_SILVER, BPBlocks.silver_block);
+//        OreDictionary.registerOre(BPOredictNames.BLOCK_COPPER, BPBlocks.copper_block);
+//        OreDictionary.registerOre(BPOredictNames.BLOCK_ZINC, BPBlocks.zinc_block);
+//        OreDictionary.registerOre(BPOredictNames.BLOCK_SILVER, BPBlocks.silver_block);
         OreDictionary.registerOre(BPOredictNames.BLOCK_TUNGSTEN, BPBlocks.tungsten_block);
-        OreDictionary.registerOre(BPOredictNames.BLOCK_TESLATITE, BPBlocks.teslatite_block);
-        OreDictionary.registerOre(BPOredictNames.BLOCK_AMETHYST, BPBlocks.amethyst_block);
-        OreDictionary.registerOre(BPOredictNames.BLOCK_RUBY, BPBlocks.ruby_block);
-        OreDictionary.registerOre(BPOredictNames.BLOCK_SAPPHIRE, BPBlocks.sapphire_block);
+//        OreDictionary.registerOre(BPOredictNames.BLOCK_TESLATITE, BPBlocks.teslatite_block);
+//        OreDictionary.registerOre(BPOredictNames.BLOCK_AMETHYST, BPBlocks.amethyst_block);
+//        OreDictionary.registerOre(BPOredictNames.BLOCK_RUBY, BPBlocks.ruby_block);
+//        OreDictionary.registerOre(BPOredictNames.BLOCK_SAPPHIRE, BPBlocks.sapphire_block);
 
         // Ingots
         OreDictionary.registerOre(BPOredictNames.INGOT_COPPER, BPItems.copper_ingot);

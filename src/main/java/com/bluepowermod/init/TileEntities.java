@@ -51,7 +51,7 @@ public class TileEntities {
 
         GameRegistry.registerTileEntity(TileAlloyFurnace.class, Refs.MODID + ".alloyFurnace");
         GameRegistry.registerTileEntity(TileBlockBreaker.class, Refs.MODID + ".blockBreaker");
-        GameRegistry.registerTileEntity(TileIgniter.class, Refs.MODID + ".igniter");
+ //       GameRegistry.registerTileEntity(TileIgniter.class, Refs.MODID + ".igniter");
         GameRegistry.registerTileEntity(TileBuffer.class, Refs.MODID + ".buffer");
         GameRegistry.registerTileEntity(TileTransposer.class, Refs.MODID + ".transposer");
         GameRegistry.registerTileEntity(TileSortingMachine.class, Refs.MODID + ".sortingMachine");

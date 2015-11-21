@@ -22,6 +22,9 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 
+import com.bioxx.tfc.api.TFCBlocks;
+import com.bioxx.tfc.api.TFCItems;
+
 import com.bluepowermod.api.BPApi;
 import com.bluepowermod.api.recipe.IAlloyFurnaceRegistry;
 import com.bluepowermod.recipe.CoreRecipes;
@@ -41,28 +44,28 @@ public class Recipes {
         // Alloy furnace
         IAlloyFurnaceRegistry af = BPApi.getInstance().getAlloyFurnaceRegistry();
 
-        af.addRecipe(new ItemStack(BPItems.red_alloy_ingot, 1), new ItemStack(Items.redstone, 4), Items.iron_ingot);
-        af.addRecipe(new ItemStack(BPItems.red_alloy_ingot, 1), new ItemStack(Items.redstone, 4), BPItems.copper_ingot);
+//        af.addRecipe(new ItemStack(BPItems.red_alloy_ingot, 1), new ItemStack(Items.redstone, 4), TFCItems.wroughtIronIngot);
+//        af.addRecipe(new ItemStack(BPItems.red_alloy_ingot, 1), new ItemStack(Items.redstone, 4), TFCItems.copperIngot);
 
-        af.addRecipe(new ItemStack(BPItems.blue_alloy_ingot, 1), new ItemStack(BPItems.teslatite_dust, 4), BPItems.silver_ingot);
+//        af.addRecipe(new ItemStack(BPItems.blue_alloy_ingot, 1), new ItemStack(Items.glowstone_dust, 4), TFCItems.wroughtIronIngot);
 
-        af.addRecipe(new ItemStack(BPItems.purple_alloy_ingot, 1), BPItems.blue_alloy_ingot, BPItems.red_alloy_ingot);
-        af.addRecipe(new ItemStack(BPItems.purple_alloy_ingot, 1), Items.gold_ingot, new ItemStack(BPItems.infused_teslatite_dust, 8));
+        af.addRecipe(new ItemStack(BPItems.purple_alloy_ingot, 1), TFCItems.blueSteelIngot, TFCItems.redSteelIngot);
+        //af.addRecipe(new ItemStack(BPItems.purple_alloy_ingot, 1), Items.gold_ingot, new ItemStack(BPItems.infused_teslatite_dust, 8));
 
-        af.addRecipe(new ItemStack(BPItems.brass_ingot, 4), new ItemStack(BPItems.copper_ingot, 3), BPItems.zinc_ingot);
-        af.addRecipe(new ItemStack(BPItems.silicon_boule, 1), new ItemStack(Items.coal, 8), new ItemStack(Blocks.sand, 8));
+        af.addRecipe(new ItemStack(BPItems.brass_ingot, 4), new ItemStack(TFCItems.copperIngot, 3), TFCItems.zincIngot);
+        af.addRecipe(new ItemStack(BPItems.silicon_boule, 1), new ItemStack(TFCItems.coal, 8), new ItemStack(TFCBlocks.sand, 8));
 
         af.addRecipe(new ItemStack(BPItems.red_doped_wafer, 1), new ItemStack(Items.redstone, 4), BPItems.silicon_wafer);
-        af.addRecipe(new ItemStack(BPItems.blue_doped_wafer, 1), new ItemStack(BPItems.teslatite_dust, 4), BPItems.silicon_wafer);
-        af.addRecipe(new ItemStack(BPItems.zincplate, 4), new ItemStack(BPItems.zinc_ingot, 1), new ItemStack(Items.iron_ingot, 2));
+        af.addRecipe(new ItemStack(BPItems.blue_doped_wafer, 1), new ItemStack(Items.glowstone_dust, 4), BPItems.silicon_wafer);
+        af.addRecipe(new ItemStack(BPItems.zincplate, 4), new ItemStack(TFCItems.zincIngot, 1), new ItemStack(TFCItems.wroughtIronIngot, 2));
 
-        af.addRecyclingRecipe(new ItemStack(Blocks.iron_block), new ItemStack(Items.iron_ingot, 9));
-        af.addRecyclingRecipe(new ItemStack(Blocks.gold_block), new ItemStack(Items.gold_ingot, 9));
-        af.addRecyclingRecipe(new ItemStack(Items.iron_ingot));
-        af.addRecyclingRecipe(new ItemStack(Items.gold_ingot));
+        //af.addRecyclingRecipe(new ItemStack(Blocks.iron_block), new ItemStack(TFCItems.wroughtIronIngot, 9));
+        //af.addRecyclingRecipe(new ItemStack(Blocks.gold_block), new ItemStack(TFCItems.goldIngot, 9));
+        af.addRecyclingRecipe(new ItemStack(TFCItems.wroughtIronIngot));
+        af.addRecyclingRecipe(new ItemStack(TFCItems.goldIngot));
         af.addRecyclingRecipe(new ItemStack(Items.gold_nugget));
 
-        af.addRecipe(new ItemStack(BPBlocks.sapphire_glass, 4), new ItemStack(Blocks.glass, 4), BPItems.sapphire_gem);
+        af.addRecipe(new ItemStack(BPBlocks.sapphire_glass, 4), new ItemStack(Blocks.glass, 4), TFCItems.gemSapphire);
         af.addRecipe(new ItemStack(BPBlocks.reinforced_sapphire_glass, 1), new ItemStack(BPBlocks.sapphire_glass, 1), new ItemStack(
                 Blocks.obsidian, 5));
     }

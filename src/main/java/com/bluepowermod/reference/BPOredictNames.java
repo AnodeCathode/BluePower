@@ -6,7 +6,7 @@ public class BPOredictNames {
     public static final String ORE_COPPER = "oreCopper";
     public static final String ORE_ZINC = "oreZinc";
     public static final String ORE_SILVER = "oreSilver";
-    public static final String ORE_TUNGSTEN = "oreTungsten";
+    public static final String ORE_TUNGSTEN = "oreSatinspar";
     public static final String ORE_TESLATITE = "oreTeslatite";
     public static final String ORE_AMETHYST = "oreAmethyst";
     public static final String ORE_RUBY = "oreRuby";

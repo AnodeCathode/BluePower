@@ -54,7 +54,7 @@ import cpw.mods.fml.common.registry.GameData;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.GameRegistry.Type;
 
-@Mod(modid = Refs.MODID, name = Refs.NAME, dependencies = "required-after:qmunitylib", guiFactory = Refs.GUIFACTORY)
+@Mod(modid = Refs.MODID, name = Refs.NAME, dependencies = "required-after:qmunitylib;after:terrafirmacraft", guiFactory = Refs.GUIFACTORY)
 public class BluePower {
 
     @Instance(Refs.MODID)
@@ -103,7 +103,7 @@ public class BluePower {
 
         TileEntities.init();
         OreDictionarySetup.init();
-        GameRegistry.registerWorldGenerator(new WorldGenerationHandler(), 0);
+       // GameRegistry.registerWorldGenerator(new WorldGenerationHandler(), 0);
 
         proxy.init();
         BPNetworkHandler.initBP();
