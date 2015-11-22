@@ -95,9 +95,9 @@ public class LogicRecipes {
                         GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "iii", 'i', t.getIngotOredictName()));
                         GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "i", "i", "i", 'i', t.getIngotOredictName()));
                     } else {
-                        GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "www", "iii", "www", 'i', t.getIngotOredictName(), 'w',
+                        GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), " w ", "iii", " w ", 'i', t.getIngotOredictName(), 'w',
                                 new ItemStack(Blocks.wool, 1, i)));
-                        GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "wiw", "wiw", "wiw", 'i', t.getIngotOredictName(), 'w',
+                        GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), " i ", "wiw", " i ", 'i', t.getIngotOredictName(), 'w',
                                 new ItemStack(Blocks.wool, 1, i)));
                     }
                     GameRegistry.addRecipe(new ShapedOreRecipe(freestanding, " s ", "sws", " s ", 's', "stickWood", 'w', stack.copy()));
@@ -116,7 +116,7 @@ public class LogicRecipes {
 
             for (MinecraftColor c : MinecraftColor.VALID_COLORS) {
                 ItemStack stack = PartManager.getPartInfo(
-                        "wire." + t.getName() + ".bundled" + (c == MinecraftColor.NONE ? "" : "." + c.name().toLowerCase())).getStack(8);
+                        "wire." + t.getName() + ".bundled" + (c == MinecraftColor.NONE ? "" : "." + c.name().toLowerCase())).getStack(12);
                 GameRegistry.addRecipe(new ShapedOreRecipe(stack, "www", "wdw", "www", 'w', bundled, 'd', "dye"
                         + StringUtils.capitalize(ItemDye.field_150923_a[15 - c.ordinal()])));
             }

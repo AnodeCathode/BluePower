@@ -21,10 +21,10 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
+import net.minecraftforge.oredict.OreDictionary;
 
 import com.bioxx.tfc.api.TFCBlocks;
 import com.bioxx.tfc.api.TFCItems;
-
 import com.bluepowermod.api.BPApi;
 import com.bluepowermod.api.recipe.IAlloyFurnaceRegistry;
 import com.bluepowermod.recipe.CoreRecipes;
@@ -53,7 +53,11 @@ public class Recipes {
         //af.addRecipe(new ItemStack(BPItems.purple_alloy_ingot, 1), Items.gold_ingot, new ItemStack(BPItems.infused_teslatite_dust, 8));
 
         af.addRecipe(new ItemStack(BPItems.brass_ingot, 4), new ItemStack(TFCItems.copperIngot, 3), TFCItems.zincIngot);
-        af.addRecipe(new ItemStack(BPItems.silicon_boule, 1), new ItemStack(TFCItems.coal, 8), new ItemStack(TFCBlocks.sand, 8));
+        for (ItemStack stack : OreDictionary.getOres("blockSand")){
+        	af.addRecipe(new ItemStack(BPItems.silicon_boule, 1), new ItemStack(TFCItems.coal, 8), new ItemStack(stack.getItem(), 8));
+        }
+        	
+    	
 
         af.addRecipe(new ItemStack(BPItems.red_doped_wafer, 1), new ItemStack(Items.redstone, 4), BPItems.silicon_wafer);
         af.addRecipe(new ItemStack(BPItems.blue_doped_wafer, 1), new ItemStack(Items.glowstone_dust, 4), BPItems.silicon_wafer);
