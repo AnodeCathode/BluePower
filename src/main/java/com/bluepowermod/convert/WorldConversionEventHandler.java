@@ -12,7 +12,7 @@ public class WorldConversionEventHandler {
     @SubscribeEvent
     public void onWorldPreLoad(WorldEvent.Load event) {
 
-        new WorldConverter(DimensionManager.getCurrentSaveRootDirectory()).convertIfNeeded();
+       // new WorldConverter(DimensionManager.getCurrentSaveRootDirectory()).convertIfNeeded();
     }
 
 }
