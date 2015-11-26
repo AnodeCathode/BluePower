@@ -65,9 +65,9 @@ public class Recipes {
 
         //af.addRecyclingRecipe(new ItemStack(Blocks.iron_block), new ItemStack(TFCItems.wroughtIronIngot, 9));
         //af.addRecyclingRecipe(new ItemStack(Blocks.gold_block), new ItemStack(TFCItems.goldIngot, 9));
-        af.addRecyclingRecipe(new ItemStack(TFCItems.wroughtIronIngot));
-        af.addRecyclingRecipe(new ItemStack(TFCItems.goldIngot));
-        af.addRecyclingRecipe(new ItemStack(Items.gold_nugget));
+        //af.addRecyclingRecipe(new ItemStack(TFCItems.wroughtIronIngot));
+        //af.addRecyclingRecipe(new ItemStack(TFCItems.goldIngot));
+        //af.addRecyclingRecipe(new ItemStack(Items.gold_nugget));
 
         af.addRecipe(new ItemStack(BPBlocks.sapphire_glass, 4), new ItemStack(Blocks.glass, 4), TFCItems.gemSapphire);
         af.addRecipe(new ItemStack(BPBlocks.reinforced_sapphire_glass, 1), new ItemStack(BPBlocks.sapphire_glass, 1), new ItemStack(
