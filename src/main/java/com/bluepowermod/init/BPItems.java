@@ -158,8 +158,8 @@ public class BPItems {
         silver_ingot = new ItemCrafting(Refs.SILVERINGOT_NAME);
         zinc_ingot = new ItemCrafting(Refs.ZINCINGOT_NAME);
         brass_ingot = new ItemCrafting(Refs.BRASSINGOT_NAME);
-//        blue_alloy_ingot = new ItemCrafting(Refs.BLUEALLOYINGOT_NAME);
-//        red_alloy_ingot = new ItemCrafting(Refs.REDALLOYINGOT_NAME);
+        blue_alloy_ingot = new ItemCrafting(Refs.BLUEALLOYINGOT_NAME);
+        red_alloy_ingot = new ItemCrafting(Refs.REDALLOYINGOT_NAME);
         purple_alloy_ingot = new ItemCrafting(Refs.PURPLEALLOYINGOT_NAME);
         tungsten_ingot = new ItemCrafting(Refs.TUNGSTENINGOT_NAME);
         tungsten_nugget = new ItemCrafting(Refs.TUNGSTENNUGGET_NAME);
@@ -247,8 +247,8 @@ public class BPItems {
         GameRegistry.registerItem(zinc_ingot, Refs.ZINCINGOT_NAME);
         GameRegistry.registerItem(tungsten_ingot, Refs.TUNGSTENINGOT_NAME);
         GameRegistry.registerItem(brass_ingot, Refs.BRASSINGOT_NAME);
-//        GameRegistry.registerItem(blue_alloy_ingot, Refs.BLUEALLOYINGOT_NAME);
-//        GameRegistry.registerItem(red_alloy_ingot, Refs.REDALLOYINGOT_NAME);
+        GameRegistry.registerItem(blue_alloy_ingot, Refs.BLUEALLOYINGOT_NAME);
+        GameRegistry.registerItem(red_alloy_ingot, Refs.REDALLOYINGOT_NAME);
         GameRegistry.registerItem(purple_alloy_ingot, Refs.PURPLEALLOYINGOT_NAME);
 
         GameRegistry.registerItem(zinc_dust, Refs.ZINCDUST_NAME);

@@ -60,6 +60,8 @@ public class CoreRecipes {
         GameRegistry.addSmelting(BPItems.zinc_dust, new ItemStack(BPItems.zinc_ingot), 0.5F);
         GameRegistry.addSmelting(BPItems.zinc_ore_purified, new ItemStack(BPItems.zinc_ingot), 0.5F);
         GameRegistry.addRecipe(new ItemStack(BPItems.zinc_dust, 1), "###", "###", "###", '#', BPItems.zinc_tiny_dust);
+        // Items
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(BPItems.teslatite_dust, 1), "dyeBlue", "itemBlazePowder"));
 
         // Blocks
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.alloyfurnace, 1), "###", "# #", "###", '#', "stoneBrick"));

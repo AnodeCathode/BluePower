@@ -44,12 +44,12 @@ public class Recipes {
         // Alloy furnace
         IAlloyFurnaceRegistry af = BPApi.getInstance().getAlloyFurnaceRegistry();
 
-//        af.addRecipe(new ItemStack(BPItems.red_alloy_ingot, 1), new ItemStack(Items.redstone, 4), TFCItems.wroughtIronIngot);
+        af.addRecipe(new ItemStack(BPItems.red_alloy_ingot, 1), new ItemStack(Items.redstone, 4), TFCItems.wroughtIronIngot);
 //        af.addRecipe(new ItemStack(BPItems.red_alloy_ingot, 1), new ItemStack(Items.redstone, 4), TFCItems.copperIngot);
 
-//        af.addRecipe(new ItemStack(BPItems.blue_alloy_ingot, 1), new ItemStack(Items.glowstone_dust, 4), TFCItems.wroughtIronIngot);
+        af.addRecipe(new ItemStack(BPItems.blue_alloy_ingot, 1), new ItemStack(BPItems.teslatite_dust, 4), TFCItems.wroughtIronIngot);
 
-        af.addRecipe(new ItemStack(BPItems.purple_alloy_ingot, 1), TFCItems.blueSteelIngot, TFCItems.redSteelIngot);
+        af.addRecipe(new ItemStack(BPItems.purple_alloy_ingot, 1), BPItems.blue_alloy_ingot, BPItems.red_alloy_ingot);
         //af.addRecipe(new ItemStack(BPItems.purple_alloy_ingot, 1), Items.gold_ingot, new ItemStack(BPItems.infused_teslatite_dust, 8));
 
         af.addRecipe(new ItemStack(BPItems.brass_ingot, 4), new ItemStack(TFCItems.copperIngot, 3), TFCItems.zincIngot);
@@ -60,7 +60,7 @@ public class Recipes {
     	
 
         af.addRecipe(new ItemStack(BPItems.red_doped_wafer, 1), new ItemStack(Items.redstone, 4), BPItems.silicon_wafer);
-        af.addRecipe(new ItemStack(BPItems.blue_doped_wafer, 1), new ItemStack(Items.glowstone_dust, 4), BPItems.silicon_wafer);
+        af.addRecipe(new ItemStack(BPItems.blue_doped_wafer, 1), new ItemStack(BPItems.teslatite_dust, 4), BPItems.silicon_wafer);
         af.addRecipe(new ItemStack(BPItems.zincplate, 4), new ItemStack(TFCItems.zincIngot, 1), new ItemStack(TFCItems.wroughtIronIngot, 2));
 
         //af.addRecyclingRecipe(new ItemStack(Blocks.iron_block), new ItemStack(TFCItems.wroughtIronIngot, 9));

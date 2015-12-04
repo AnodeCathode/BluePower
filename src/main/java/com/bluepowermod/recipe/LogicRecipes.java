@@ -21,6 +21,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemDye;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
@@ -34,6 +35,8 @@ import com.bluepowermod.part.PartManager;
 import com.bluepowermod.part.gate.supported.GateNullCell;
 import com.bluepowermod.reference.BPOredictNames;
 
+import com.bioxx.tfc.api.TFCItems;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
@@ -44,14 +47,14 @@ public class LogicRecipes {
     public static void init() {
 
         // Components
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_wire_tile, 1), "#", "W", '#', "dustRedstone", 'W',
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_wire_tile, 1), "#", "W", '#', "dustTeslatite", 'W',
                 BPOredictNames.STONE_TILE));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_anode_tile, 3), " # ", "###", "WWW", '#', "dustRedstone", 'W',
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_anode_tile, 3), " # ", "###", "WWW", '#', "dustTeslatite", 'W',
                 BPOredictNames.STONE_TILE));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_cathode_tile, 1), "T#T", " W ", 'T', "dustRedstone", '#',
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_cathode_tile, 1), "T#T", " W ", 'T', "dustTeslatite", '#',
                 Blocks.redstone_torch, 'W', BPOredictNames.STONE_TILE));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_pointer_tile, 1), " S ", "T#T", " W ", 'S', "stone", '#',
-                Blocks.redstone_torch, 'W', BPOredictNames.STONE_TILE, 'T', "dustRedstone"));
+                Blocks.redstone_torch, 'W', BPOredictNames.STONE_TILE, 'T', "dustTeslatite"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.bluestone_pointer_tile, 1), "S", "T", 'S', "stone", 'T',
                 BPOredictNames.BLUESTONE_CATHODE));
 
@@ -79,29 +82,31 @@ public class LogicRecipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPItems.stone_bundle, 1), "#", "W", '#', "wireBundled", 'W',
                 BPOredictNames.STONE_TILE));
 
-        GameRegistry
-                .addRecipe(new ShapelessOreRecipe(new ItemStack(BPItems.infused_teslatite_dust, 1), BPOredictNames.DUST_TESLATITE, Items.redstone));
+//        GameRegistry
+//                .addRecipe(new ShapelessOreRecipe(new ItemStack(BPItems.infused_teslatite_dust, 1), BPOredictNames.DUST_TESLATITE, Items.redstone));
 
         {
             for (RedwireType t : RedwireType.values()) {
-                int i = 0;
                 for (MinecraftColor c : MinecraftColor.WIRE_COLORS) {
                     ItemStack stack = PartManager.getPartInfo("wire." + t.getName() + (c == MinecraftColor.NONE ? "" : "." + c.name().toLowerCase()))
-                            .getStack(12);
+                            .getStack(8);
                     ItemStack freestanding = PartManager.getPartInfo(
                             "wire.freestanding." + t.getName() + (c == MinecraftColor.NONE ? "" : "." + c.name().toLowerCase())).getStack(1);
 
                     if (c == MinecraftColor.NONE) {
-                        GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "iii", 'i', t.getIngotOredictName()));
-                        GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "i", "i", "i", 'i', t.getIngotOredictName()));
+                        GameRegistry.addRecipe(new ShapelessOreRecipe(stack.copy(), t.getIngotOredictName(), new ItemStack(BPItems.diamond_drawplate, 1,
+                                OreDictionary.WILDCARD_VALUE)));
+                        //GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "i", "i", "i", 'i', t.getIngotOredictName()));
                     } else {
-                        GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), " w ", "iii", " w ", 'i', t.getIngotOredictName(), 'w',
-                                new ItemStack(Blocks.wool, 1, i)));
-                        GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), " i ", "wiw", " i ", 'i', t.getIngotOredictName(), 'w',
-                                new ItemStack(Blocks.wool, 1, i)));
+                        GameRegistry.addRecipe(new ShapelessOreRecipe(stack.copy(), t.getIngotOredictName(), new ItemStack(BPItems.diamond_drawplate, 1,
+                                OreDictionary.WILDCARD_VALUE), "materialCloth",
+                                "dye" + StringUtils.capitalize(ItemDye.field_150923_a[15 - c.ordinal()])));
+                        GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "www", "wdw", "www", 'd', "dye"
+                                + StringUtils.capitalize(ItemDye.field_150923_a[15 - c.ordinal()]), 'w', "wireInsulated"));
+                        // GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "wiw", "cic", "wiw", 'i', t.getIngotOredictName(), 'c', "materialCloth", 'w',
+                         //       new ItemStack(TFCItems.dye, 1, 15-i)));
                     }
                     GameRegistry.addRecipe(new ShapedOreRecipe(freestanding, " s ", "sws", " s ", 's', "stickWood", 'w', stack.copy()));
-                    i++;
                 }
             }
         }
@@ -116,7 +121,7 @@ public class LogicRecipes {
 
             for (MinecraftColor c : MinecraftColor.VALID_COLORS) {
                 ItemStack stack = PartManager.getPartInfo(
-                        "wire." + t.getName() + ".bundled" + (c == MinecraftColor.NONE ? "" : "." + c.name().toLowerCase())).getStack(12);
+                        "wire." + t.getName() + ".bundled" + (c == MinecraftColor.NONE ? "" : "." + c.name().toLowerCase())).getStack(8);
                 GameRegistry.addRecipe(new ShapedOreRecipe(stack, "www", "wdw", "www", 'w', bundled, 'd', "dye"
                         + StringUtils.capitalize(ItemDye.field_150923_a[15 - c.ordinal()])));
             }
