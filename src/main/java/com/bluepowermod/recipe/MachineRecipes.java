@@ -87,16 +87,16 @@ public class MachineRecipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.regulator, 1), "IBI", "WDW", "PBP", 'I', "ingotBrass", 'B',
                 BPBlocks.buffer, 'W', BPItems.red_doped_wafer, 'D', BPBlocks.item_detector, 'P', "plankWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.retriever, 1), "BLB", "EFE", "IAI", 'B', "ingotBrass", 'L',
-                TFCItems.leather, 'E', Items.ender_pearl, 'F', BPBlocks.filter, 'I', "ingotIron", 'A', "ingotBlueSteel"));
+                TFCItems.leather, 'E', Items.ender_pearl, 'F', BPBlocks.filter, 'I', "ingotIron", 'A', "ingotBlueAlloy"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.filter, 1), "CCC", "GPG", "CWC", 'C', "cobblestone", 'G',
                 "ingotGold", 'P', Blocks.piston, 'W', BPItems.red_doped_wafer));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.sorting_machine, 1), "CCC", "GPG", "CWC", 'C', "ingotIron", 'G',
-                BPItems.red_doped_wafer, 'P', BPBlocks.filter, 'W', "ingotBlueSteel"));
+                BPItems.red_doped_wafer, 'P', BPBlocks.filter, 'W', "ingotSteel"));
 //        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.igniter, 1), "NFN", "CDC", "CRC", 'C', "cobblestone", 'N',
 //                Blocks.netherrack, 'F', "toolFlintSteel", 'R', "dustRedstone", 'D', BPBlocks.deployer));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.deployer, 1), "CIC", "CPC", "CRC", 'C', "cobblestone", 'I',
                 "chestWood", 'P', Blocks.piston, 'R', "dustRedstone"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.manager, 1), "IRI", "WSW", "PBP", 'I', "ingotIron", 'R',
-                BPBlocks.regulator, 'P', "plankWood", 'W', BPItems.red_doped_wafer, 'B', "ingotBlueSteel", 'S', BPBlocks.sorting_machine));
+                BPBlocks.regulator, 'P', "plankWood", 'W', BPItems.red_doped_wafer, 'B', "ingotBlackSteel", 'S', BPBlocks.sorting_machine));
     }
 }

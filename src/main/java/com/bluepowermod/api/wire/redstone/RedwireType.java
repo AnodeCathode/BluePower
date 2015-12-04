@@ -23,7 +23,7 @@ import com.bluepowermod.part.PartManager;
 
 public enum RedwireType {
 
-    BLUESTONE(false, false, 0x1B1B51, 0x4444CC, "nuggetBlueSteel"), RED_ALLOY(true, true, 0x470000, 0xBB0000, "nuggetRedSteel"), INFUSED_TESLATITE(
+    BLUESTONE(false, false, 0x1B1B51, 0x4444CC, "ingotBlueAlloy"), RED_ALLOY(true, true, 0x470000, 0xBB0000, "ingotRedAlloy"), INFUSED_TESLATITE(
             true, false, 0x3A003E, 0xAA00BB, "ingotPurpleAlloy");
 
     private boolean analogue, loss;
