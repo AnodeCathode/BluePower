@@ -94,12 +94,10 @@ public class LogicRecipes {
                             "wire.freestanding." + t.getName() + (c == MinecraftColor.NONE ? "" : "." + c.name().toLowerCase())).getStack(1);
 
                     if (c == MinecraftColor.NONE) {
-                        GameRegistry.addRecipe(new ShapelessOreRecipe(stack.copy(), t.getIngotOredictName(), new ItemStack(BPItems.diamond_drawplate, 1,
-                                OreDictionary.WILDCARD_VALUE)));
+                        GameRegistry.addRecipe(new ShapelessOreRecipe(stack.copy(), t.getIngotOredictName()));
                         //GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "i", "i", "i", 'i', t.getIngotOredictName()));
                     } else {
-                        GameRegistry.addRecipe(new ShapelessOreRecipe(stack.copy(), t.getIngotOredictName(), new ItemStack(BPItems.diamond_drawplate, 1,
-                                OreDictionary.WILDCARD_VALUE), "materialCloth",
+                        GameRegistry.addRecipe(new ShapelessOreRecipe(stack.copy(), t.getIngotOredictName(), "materialCloth",
                                 "dye" + StringUtils.capitalize(ItemDye.field_150923_a[15 - c.ordinal()])));
                         GameRegistry.addRecipe(new ShapedOreRecipe(stack.copy(), "www", "wdw", "www", 'd', "dye"
                                 + StringUtils.capitalize(ItemDye.field_150923_a[15 - c.ordinal()]), 'w', "wireInsulated"));
