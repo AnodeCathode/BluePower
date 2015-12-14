@@ -149,33 +149,33 @@ public class BPEventHandler {
 
     }
 
-    @SubscribeEvent
-    public void onEntityDeath(LivingDeathEvent event) {
+   // @SubscribeEvent
+    //public void onEntityDeath(LivingDeathEvent event) {
 
-        if (event.source instanceof EntityDamageSource) {
-            EntityDamageSource entitySource = (EntityDamageSource) event.source;
+//        if (event.source instanceof EntityDamageSource) {
+  //          EntityDamageSource entitySource = (EntityDamageSource) event.source;
 
-            if (entitySource.getEntity() instanceof EntityPlayer) {
-                EntityPlayer killer = (EntityPlayer) entitySource.getEntity();
+//            if (entitySource.getEntity() instanceof EntityPlayer) {
+  //              EntityPlayer killer = (EntityPlayer) entitySource.getEntity();
 
-                if (killer.inventory.getCurrentItem() != null) {
-                    if (EnchantmentHelper.getEnchantments(killer.inventory.getCurrentItem()).containsKey(BPEnchantments.vorpal.effectId)) {
-                        int level = EnchantmentHelper.getEnchantmentLevel(BPEnchantments.vorpal.effectId, killer.inventory.getCurrentItem());
+//                if (killer.inventory.getCurrentItem() != null) {
+  //                  if (EnchantmentHelper.getEnchantments(killer.inventory.getCurrentItem()).containsKey(BPEnchantments.vorpal.effectId)) {
+    //                    int level = EnchantmentHelper.getEnchantmentLevel(BPEnchantments.vorpal.effectId, killer.inventory.getCurrentItem());
 
-                        if (level == 1) {
-                            if (killer.worldObj.rand.nextInt(6) == 1) {
-                                dropHeads(event);
-                            }
-                        } else if (level == 2) {
-                            if (killer.worldObj.rand.nextInt(3) == 1) {
-                                dropHeads(event);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+      //                  if (level == 1) {
+        //                    if (killer.worldObj.rand.nextInt(6) == 1) {
+          //                      dropHeads(event);
+            //                }
+              //          } else if (level == 2) {
+                //            if (killer.worldObj.rand.nextInt(3) == 1) {
+                  //              dropHeads(event);
+                    //        }
+                  //      }
+                //    }
+             //   }
+         //  }
+      //  }
+   // }
 
     private void dropHeads(LivingDeathEvent event) {
 
