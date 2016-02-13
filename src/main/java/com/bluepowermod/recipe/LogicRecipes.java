@@ -129,7 +129,7 @@ public class LogicRecipes {
 
         // Blocks
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.circuit_table), "WIW", "WCW", "WPW", 'W', "plankWood", 'I', PartManager
-                .getPartInfo("integratedCircuit3x3").getStack(), 'C', Blocks.chest, 'P', BPBlocks.project_table));
+                .getPartInfo("integratedCircuit3x3").getStack(), 'C', "chestWood", 'P', BPBlocks.project_table));
 
         // Gates and Circuits
         GameRegistry.addRecipe(new ShapedOreRecipe(PartManager.getPartInfo("and").getStack(), "ACA", "CCC", "#W#", '#', BPOredictNames.STONE_TILE,
