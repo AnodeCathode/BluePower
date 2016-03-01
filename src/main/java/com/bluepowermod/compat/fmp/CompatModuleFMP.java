@@ -63,7 +63,7 @@ public class CompatModuleFMP extends CompatModule {
 
 //        registerBlockAsMicroblock(BPBlocks.tiles);
 
-        registerBlockAsMicroblock(BPBlocks.tungsten_block);
+//        registerBlockAsMicroblock(BPBlocks.tungsten_block);
 //        registerBlockAsMicroblock(BPBlocks.teslatite_block);
 //        registerBlockAsMicroblock(BPBlocks.amethyst_block);
 //        registerBlockAsMicroblock(BPBlocks.ruby_block);

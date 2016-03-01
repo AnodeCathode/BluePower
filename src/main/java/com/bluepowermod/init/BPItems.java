@@ -150,27 +150,27 @@ public class BPItems {
 
     public static void initializeItems() {
 
-        amethyst_gem = new ItemCrafting(Refs.AMETHYST_NAME);
-        sapphire_gem = new ItemCrafting(Refs.SAPPHIRE_NAME);
-        ruby_gem = new ItemCrafting(Refs.RUBY_NAME);
+//        amethyst_gem = new ItemCrafting(Refs.AMETHYST_NAME);
+//        sapphire_gem = new ItemCrafting(Refs.SAPPHIRE_NAME);
+//        ruby_gem = new ItemCrafting(Refs.RUBY_NAME);
         teslatite_dust = new ItemCrafting(Refs.TESLATITE_NAME);
-        copper_ingot = new ItemCrafting(Refs.COPPERINGOT_NAME);
-        silver_ingot = new ItemCrafting(Refs.SILVERINGOT_NAME);
-        zinc_ingot = new ItemCrafting(Refs.ZINCINGOT_NAME);
+//        copper_ingot = new ItemCrafting(Refs.COPPERINGOT_NAME);
+//        silver_ingot = new ItemCrafting(Refs.SILVERINGOT_NAME);
+//        zinc_ingot = new ItemCrafting(Refs.ZINCINGOT_NAME);
         brass_ingot = new ItemCrafting(Refs.BRASSINGOT_NAME);
         blue_alloy_ingot = new ItemCrafting(Refs.BLUEALLOYINGOT_NAME);
         red_alloy_ingot = new ItemCrafting(Refs.REDALLOYINGOT_NAME);
         purple_alloy_ingot = new ItemCrafting(Refs.PURPLEALLOYINGOT_NAME);
-        tungsten_ingot = new ItemCrafting(Refs.TUNGSTENINGOT_NAME);
+//        tungsten_ingot = new ItemCrafting(Refs.TUNGSTENINGOT_NAME);
         tungsten_nugget = new ItemCrafting(Refs.TUNGSTENNUGGET_NAME);
-        zinc_ore_crushed = new ItemBase().setUnlocalizedName(Refs.ZINC_ORE_CRUSHED_NAME)
-                .setTextureName(Refs.MODID + ":" + Refs.ZINC_ORE_CRUSHED_NAME).setCreativeTab(BPCreativeTabs.items);
-        zinc_ore_purified = new ItemBase().setUnlocalizedName(Refs.ZINC_ORE_CRUSHED_PURIFIED_NAME)
-                .setTextureName(Refs.MODID + ":" + Refs.ZINC_ORE_CRUSHED_PURIFIED_NAME).setCreativeTab(BPCreativeTabs.items);
-        zinc_dust = new ItemBase().setUnlocalizedName(Refs.ZINCDUST_NAME).setTextureName(Refs.MODID + ":" + Refs.ZINCDUST_NAME)
-                .setCreativeTab(BPCreativeTabs.items);
-        zinc_tiny_dust = new ItemBase().setUnlocalizedName(Refs.ZINCDUST_TINY_NAME).setTextureName(Refs.MODID + ":" + Refs.ZINCDUST_TINY_NAME)
-                .setCreativeTab(BPCreativeTabs.items);
+//        zinc_ore_crushed = new ItemBase().setUnlocalizedName(Refs.ZINC_ORE_CRUSHED_NAME)
+//                .setTextureName(Refs.MODID + ":" + Refs.ZINC_ORE_CRUSHED_NAME).setCreativeTab(BPCreativeTabs.items);
+//        zinc_ore_purified = new ItemBase().setUnlocalizedName(Refs.ZINC_ORE_CRUSHED_PURIFIED_NAME)
+//                .setTextureName(Refs.MODID + ":" + Refs.ZINC_ORE_CRUSHED_PURIFIED_NAME).setCreativeTab(BPCreativeTabs.items);
+//        zinc_dust = new ItemBase().setUnlocalizedName(Refs.ZINCDUST_NAME).setTextureName(Refs.MODID + ":" + Refs.ZINCDUST_NAME)
+//                .setCreativeTab(BPCreativeTabs.items);
+//        zinc_tiny_dust = new ItemBase().setUnlocalizedName(Refs.ZINCDUST_TINY_NAME).setTextureName(Refs.MODID + ":" + Refs.ZINCDUST_TINY_NAME)
+//                .setCreativeTab(BPCreativeTabs.items);
 //        ruby_saw = new ItemSaw(2, Refs.RUBYSAW_NAME);
 //        sapphire_saw = new ItemSaw(2, Refs.SAPPHIRESAW_NAME);
 //        amethyst_saw = new ItemSaw(2, Refs.AMETHYSTSAW_NAME);
@@ -238,23 +238,23 @@ public class BPItems {
 
     public static void registerItems() {
 
-        GameRegistry.registerItem(amethyst_gem, Refs.AMETHYST_NAME);
-        GameRegistry.registerItem(sapphire_gem, Refs.SAPPHIRE_NAME);
-        GameRegistry.registerItem(ruby_gem, Refs.RUBY_NAME);
+//        GameRegistry.registerItem(amethyst_gem, Refs.AMETHYST_NAME);
+//        GameRegistry.registerItem(sapphire_gem, Refs.SAPPHIRE_NAME);
+//        GameRegistry.registerItem(ruby_gem, Refs.RUBY_NAME);
         GameRegistry.registerItem(teslatite_dust, Refs.TESLATITE_NAME);
-        GameRegistry.registerItem(copper_ingot, Refs.COPPERINGOT_NAME);
-        GameRegistry.registerItem(silver_ingot, Refs.SILVERINGOT_NAME);
-        GameRegistry.registerItem(zinc_ingot, Refs.ZINCINGOT_NAME);
-        GameRegistry.registerItem(tungsten_ingot, Refs.TUNGSTENINGOT_NAME);
+//        GameRegistry.registerItem(copper_ingot, Refs.COPPERINGOT_NAME);
+//        GameRegistry.registerItem(silver_ingot, Refs.SILVERINGOT_NAME);
+//        GameRegistry.registerItem(zinc_ingot, Refs.ZINCINGOT_NAME);
+//        GameRegistry.registerItem(tungsten_ingot, Refs.TUNGSTENINGOT_NAME);
         GameRegistry.registerItem(brass_ingot, Refs.BRASSINGOT_NAME);
         GameRegistry.registerItem(blue_alloy_ingot, Refs.BLUEALLOYINGOT_NAME);
         GameRegistry.registerItem(red_alloy_ingot, Refs.REDALLOYINGOT_NAME);
         GameRegistry.registerItem(purple_alloy_ingot, Refs.PURPLEALLOYINGOT_NAME);
 
-        GameRegistry.registerItem(zinc_dust, Refs.ZINCDUST_NAME);
-        GameRegistry.registerItem(zinc_ore_crushed, Refs.ZINC_ORE_CRUSHED_NAME);
-        GameRegistry.registerItem(zinc_ore_purified, Refs.ZINC_ORE_CRUSHED_PURIFIED_NAME);
-        GameRegistry.registerItem(zinc_tiny_dust, Refs.ZINCDUST_TINY_NAME);
+//        GameRegistry.registerItem(zinc_dust, Refs.ZINCDUST_NAME);
+//        GameRegistry.registerItem(zinc_ore_crushed, Refs.ZINC_ORE_CRUSHED_NAME);
+//        GameRegistry.registerItem(zinc_ore_purified, Refs.ZINC_ORE_CRUSHED_PURIFIED_NAME);
+//        GameRegistry.registerItem(zinc_tiny_dust, Refs.ZINCDUST_TINY_NAME);
         GameRegistry.registerItem(tungsten_nugget, Refs.TUNGSTENNUGGET_NAME);
 
 //        GameRegistry.registerItem(ruby_axe, Refs.RUBYAXE_NAME);
