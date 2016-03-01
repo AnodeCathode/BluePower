@@ -182,7 +182,7 @@ public class BPBlocks {
 //        copper_ore = new BlockStoneOre(Refs.COPPERORE_NAME);
 //        silver_ore = new BlockStoneOre(Refs.SILVERORE_NAME).setToolLevel(2);
 //        zinc_ore = new BlockStoneOre(Refs.ZINCORE_NAME);
-        tungsten_ore = new BlockStoneOre(Refs.TUNGSTENORE_NAME).setToolLevel(3).setResistance(6.0F).setHardness(15.0F);
+        //tungsten_ore = new BlockStoneOre(Refs.TUNGSTENORE_NAME).setToolLevel(3).setResistance(6.0F).setHardness(15.0F);
 
 //        ruby_block = new BlockStoneOre(Refs.RUBYBLOCK_NAME).setToolLevel(2);
 //        sapphire_block = new BlockStoneOre(Refs.SAPPHIREBLOCK_NAME).setToolLevel(2);
@@ -191,7 +191,7 @@ public class BPBlocks {
 //        copper_block = new BlockStoneOre(Refs.COPPERBLOCK_NAME);
 //        silver_block = new BlockStoneOre(Refs.SILVERBLOCK_NAME).setToolLevel(2);
 //        zinc_block = new BlockStoneOre(Refs.ZINCBLOCK_NAME);
-        tungsten_block = new BlockStoneOre(Refs.TUNGSTENBLOCK_NAME).setToolLevel(3).setResistance(25.0F).setHardness(5.0F);
+        //tungsten_block = new BlockStoneOre(Refs.TUNGSTENBLOCK_NAME).setToolLevel(3).setResistance(25.0F).setHardness(5.0F);
 
         sapphire_glass = new BlockStoneOreConnected(Refs.SAPPHIREGLASS_NAME).setTransparent(true).setHardness(10).setResistance(10000);
         reinforced_sapphire_glass = new BlockStoneOreConnected(Refs.REINFORCEDSAPPHIREGLASS_NAME).setTransparent(true).setWitherproof(true)
@@ -270,7 +270,7 @@ public class BPBlocks {
 //        GameRegistry.registerBlock(copper_ore, Refs.COPPERORE_NAME);
 //        GameRegistry.registerBlock(silver_ore, Refs.SILVERORE_NAME);
 //        GameRegistry.registerBlock(zinc_ore, Refs.ZINCORE_NAME);
-        GameRegistry.registerBlock(tungsten_ore, Refs.TUNGSTENORE_NAME);
+//        GameRegistry.registerBlock(tungsten_ore, Refs.TUNGSTENORE_NAME);
 //        GameRegistry.registerBlock(ruby_ore, Refs.RUBYORE_NAME);
 //        GameRegistry.registerBlock(sapphire_ore, Refs.SAPPHIREORE_NAME);
 //        GameRegistry.registerBlock(amethyst_ore, Refs.AMETHYSTORE_NAME);
@@ -282,7 +282,7 @@ public class BPBlocks {
 //        GameRegistry.registerBlock(copper_block, Refs.COPPERBLOCK_NAME);
 //        GameRegistry.registerBlock(silver_block, Refs.SILVERBLOCK_NAME);
 //        GameRegistry.registerBlock(zinc_block, Refs.ZINCBLOCK_NAME);
-        GameRegistry.registerBlock(tungsten_block, Refs.TUNGSTENBLOCK_NAME);
+//        GameRegistry.registerBlock(tungsten_block, Refs.TUNGSTENBLOCK_NAME);
 
         GameRegistry.registerBlock(sapphire_glass, Refs.SAPPHIREGLASS_NAME);
         GameRegistry.registerBlock(reinforced_sapphire_glass, ItemBlockTooltip.class, Refs.REINFORCEDSAPPHIREGLASS_NAME);

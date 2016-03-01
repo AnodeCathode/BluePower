@@ -31,30 +31,30 @@ public class OreDictionarySetup {
     public static void init() {
 
         // Ores
-        OreDictionary.registerOre(BPOredictNames.ORE_COPPER, BPBlocks.copper_ore);
-        OreDictionary.registerOre(BPOredictNames.ORE_ZINC, BPBlocks.zinc_ore);
-        OreDictionary.registerOre(BPOredictNames.ORE_SILVER, BPBlocks.silver_ore);
-        OreDictionary.registerOre(BPOredictNames.ORE_TUNGSTEN, BPBlocks.tungsten_ore);
-        OreDictionary.registerOre(BPOredictNames.ORE_TESLATITE, BPBlocks.teslatite_ore);
-        OreDictionary.registerOre(BPOredictNames.ORE_AMETHYST, BPBlocks.amethyst_ore);
-        OreDictionary.registerOre(BPOredictNames.ORE_RUBY, BPBlocks.ruby_ore);
-        OreDictionary.registerOre(BPOredictNames.ORE_SAPPHIRE, BPBlocks.sapphire_ore);
+//        OreDictionary.registerOre(BPOredictNames.ORE_COPPER, BPBlocks.copper_ore);
+//        OreDictionary.registerOre(BPOredictNames.ORE_ZINC, BPBlocks.zinc_ore);
+//        OreDictionary.registerOre(BPOredictNames.ORE_SILVER, BPBlocks.silver_ore);
+//        OreDictionary.registerOre(BPOredictNames.ORE_TUNGSTEN, BPBlocks.tungsten_ore);
+//        OreDictionary.registerOre(BPOredictNames.ORE_TESLATITE, BPBlocks.teslatite_ore);
+//        OreDictionary.registerOre(BPOredictNames.ORE_AMETHYST, BPBlocks.amethyst_ore);
+//        OreDictionary.registerOre(BPOredictNames.ORE_RUBY, BPBlocks.ruby_ore);
+//        OreDictionary.registerOre(BPOredictNames.ORE_SAPPHIRE, BPBlocks.sapphire_ore);
 
         // Storage blocks
 //        OreDictionary.registerOre(BPOredictNames.BLOCK_COPPER, BPBlocks.copper_block);
 //        OreDictionary.registerOre(BPOredictNames.BLOCK_ZINC, BPBlocks.zinc_block);
 //        OreDictionary.registerOre(BPOredictNames.BLOCK_SILVER, BPBlocks.silver_block);
-        OreDictionary.registerOre(BPOredictNames.BLOCK_TUNGSTEN, BPBlocks.tungsten_block);
+//        OreDictionary.registerOre(BPOredictNames.BLOCK_TUNGSTEN, BPBlocks.tungsten_block);
 //        OreDictionary.registerOre(BPOredictNames.BLOCK_TESLATITE, BPBlocks.teslatite_block);
 //        OreDictionary.registerOre(BPOredictNames.BLOCK_AMETHYST, BPBlocks.amethyst_block);
 //        OreDictionary.registerOre(BPOredictNames.BLOCK_RUBY, BPBlocks.ruby_block);
 //        OreDictionary.registerOre(BPOredictNames.BLOCK_SAPPHIRE, BPBlocks.sapphire_block);
 
         // Ingots
-        OreDictionary.registerOre(BPOredictNames.INGOT_COPPER, BPItems.copper_ingot);
-        OreDictionary.registerOre(BPOredictNames.INGOT_ZINC, BPItems.zinc_ingot);
-        OreDictionary.registerOre(BPOredictNames.INGOT_SILVER, BPItems.silver_ingot);
-        OreDictionary.registerOre(BPOredictNames.INGOT_TUNGSTEN, BPItems.tungsten_ingot);
+//        OreDictionary.registerOre(BPOredictNames.INGOT_COPPER, BPItems.copper_ingot);
+//        OreDictionary.registerOre(BPOredictNames.INGOT_ZINC, BPItems.zinc_ingot);
+//        OreDictionary.registerOre(BPOredictNames.INGOT_SILVER, BPItems.silver_ingot);
+//        OreDictionary.registerOre(BPOredictNames.INGOT_TUNGSTEN, BPItems.tungsten_ingot);
 
         OreDictionary.registerOre(BPOredictNames.INGOT_BLUE_ALLOY, BPItems.blue_alloy_ingot);
         OreDictionary.registerOre(BPOredictNames.INGOT_RED_ALLOY, BPItems.red_alloy_ingot);
@@ -65,15 +65,15 @@ public class OreDictionarySetup {
         // Dusts
         OreDictionary.registerOre(BPOredictNames.DUST_TESLATITE, BPItems.teslatite_dust);
         OreDictionary.registerOre(BPOredictNames.DUST_INFUSED_TESLATITE, BPItems.infused_teslatite_dust);
-        OreDictionary.registerOre(BPOredictNames.DUST_ZINC, BPItems.zinc_dust);
+//        OreDictionary.registerOre(BPOredictNames.DUST_ZINC, BPItems.zinc_dust);
 
         // Nuggets
         OreDictionary.registerOre("nuggetTungsten", BPItems.tungsten_nugget);
 
         // Gems
-        OreDictionary.registerOre(BPOredictNames.GEM_AMETHYST, BPItems.amethyst_gem);
-        OreDictionary.registerOre(BPOredictNames.GEM_RUBY, BPItems.ruby_gem);
-        OreDictionary.registerOre(BPOredictNames.GEM_SAPPHIRE, BPItems.sapphire_gem);
+//        OreDictionary.registerOre(BPOredictNames.GEM_AMETHYST, BPItems.amethyst_gem);
+//        OreDictionary.registerOre(BPOredictNames.GEM_RUBY, BPItems.ruby_gem);
+//        OreDictionary.registerOre(BPOredictNames.GEM_SAPPHIRE, BPItems.sapphire_gem);
 
         // Dyes
         OreDictionary.registerOre(BPOredictNames.DYE_INDIGO, BPItems.indigo_dye);
@@ -94,8 +94,8 @@ public class OreDictionarySetup {
         OreDictionary.registerOre(BPOredictNames.BUNDLED_TILE, BPItems.stone_bundle);
 
         // Other
-        OreDictionary.registerOre(BPOredictNames.MARBLE, BPBlocks.marble);
-        OreDictionary.registerOre(BPOredictNames.BASALT, BPBlocks.basalt);
+//        OreDictionary.registerOre(BPOredictNames.MARBLE, BPBlocks.marble);
+//        OreDictionary.registerOre(BPOredictNames.BASALT, BPBlocks.basalt);
 
         for (Block b : BPBlocks.blockLamp)
             OreDictionary.registerOre("lampBP", b);

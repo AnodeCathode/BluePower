@@ -56,10 +56,10 @@ public class CoreRecipes {
         for (ItemStack stack : OreDictionary.getOres("stone")){
         	GameRegistry.addSmelting(stack, new ItemStack(BPItems.stone_tile, 2), 0);	
         }
-        GameRegistry.addSmelting(BPItems.zinc_ore_crushed, new ItemStack(BPItems.zinc_ingot), 0.5F);
-        GameRegistry.addSmelting(BPItems.zinc_dust, new ItemStack(BPItems.zinc_ingot), 0.5F);
-        GameRegistry.addSmelting(BPItems.zinc_ore_purified, new ItemStack(BPItems.zinc_ingot), 0.5F);
-        GameRegistry.addRecipe(new ItemStack(BPItems.zinc_dust, 1), "###", "###", "###", '#', BPItems.zinc_tiny_dust);
+//        GameRegistry.addSmelting(BPItems.zinc_ore_crushed, new ItemStack(BPItems.zinc_ingot), 0.5F);
+//        GameRegistry.addSmelting(BPItems.zinc_dust, new ItemStack(BPItems.zinc_ingot), 0.5F);
+//        GameRegistry.addSmelting(BPItems.zinc_ore_purified, new ItemStack(BPItems.zinc_ingot), 0.5F);
+//        GameRegistry.addRecipe(new ItemStack(BPItems.zinc_dust, 1), "###", "###", "###", '#', BPItems.zinc_tiny_dust);
         // Items
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(BPItems.teslatite_dust, 1), "dyeBlue", "itemBlazePowder"));
 
@@ -108,7 +108,7 @@ public class CoreRecipes {
 //        GameRegistry.addRecipe(new ItemStack(BPItems.silver_ingot, 9), "#", '#', BPBlocks.silver_block);
 //        GameRegistry.addRecipe(new ItemStack(BPItems.copper_ingot, 9), "#", '#', BPBlocks.copper_block);
 //        GameRegistry.addRecipe(new ItemStack(BPItems.zinc_ingot, 9), "#", '#', BPBlocks.zinc_block);
-    	  GameRegistry.addRecipe(new ItemStack(BPItems.tungsten_ingot, 9), "#", '#', BPBlocks.tungsten_block);
+//    	  GameRegistry.addRecipe(new ItemStack(BPItems.tungsten_ingot, 9), "#", '#', BPBlocks.tungsten_block);
 //        GameRegistry.addRecipe(new ItemStack(BPItems.tungsten_nugget, 9), "#", '#', BPItems.tungsten_ingot);
 //        GameRegistry.addRecipe(new ItemStack(BPItems.teslatite_dust, 9), "#", '#', BPBlocks.teslatite_block);
 
