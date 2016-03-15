@@ -116,9 +116,9 @@ public class BPEventHandler {
             }
         }
 
-        if (pickUp.getItem().equals(Item.getItemFromBlock(BPBlocks.tungsten_ore))) {
-            player.addStat(Achievements.tungstenAchievement, 1);
-        }
+        //if (pickUp.getItem().equals(Item.getItemFromBlock(BPBlocks.tungsten_ore))) {
+          //  player.addStat(Achievements.tungstenAchievement, 1);
+        //}
     }
 
     private boolean isAttacking = false;

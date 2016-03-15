@@ -16,8 +16,8 @@ public class Achievements {
      //       (Achievement) null);
     public static Achievement sortAchievement = new Achievement("achievement.bluepower:sort", "bluepower:sort", 2, 0, BPBlocks.sorting_machine,
             (Achievement) null);
-    public static Achievement tungstenAchievement = new Achievement("achievement.bluepower:tungsten", "bluepower:tungsten", -2, 2,
-            BPBlocks.tungsten_ore, (Achievement) null);
+   // public static Achievement tungstenAchievement = new Achievement("achievement.bluepower:tungsten", "bluepower:tungsten", -2, 2,
+     //       BPBlocks.tungsten_ore, (Achievement) null);
     public static Achievement dopeAchievement = new Achievement("achievement.bluepower:dope", "bluepower:dope", 2, 2, BPItems.blue_doped_wafer,
             (Achievement) null);
     public static Achievement tubeAchievement = new Achievement("achievement.bluepower:tube", "bluepower:tube", 0, 0, PartManager.getPartInfo(
@@ -27,14 +27,14 @@ public class Achievements {
     public static Achievement circuitCeptionAchievement = new Achievement("achievement.bluepower:circuitception", "bluepower:circuitception", 0, -2,
             PartManager.getPartInfo("integratedCircuit3x3").getItem(), (Achievement) null);
 
-    private static AchievementPage achievementPage = new AchievementPage("BluePower", tungstenAchievement, dopeAchievement,
+    private static AchievementPage achievementPage = new AchievementPage("BluePower", dopeAchievement,
             sortAchievement, tubeAchievement, magTubeAchievement, circuitCeptionAchievement);
 
     public static void init() {
 
         AchievementPage.registerAchievementPage(achievementPage);
  //       vorpalAchievement.initIndependentStat().registerStat();
-        tungstenAchievement.initIndependentStat().registerStat();
+ //       tungstenAchievement.initIndependentStat().registerStat();
         dopeAchievement.initIndependentStat().registerStat();
         sortAchievement.initIndependentStat().registerStat();
         tubeAchievement.initIndependentStat().registerStat();
