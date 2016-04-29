@@ -69,7 +69,9 @@ public class Recipes {
         //af.addRecyclingRecipe(new ItemStack(TFCItems.goldIngot));
         //af.addRecyclingRecipe(new ItemStack(Items.gold_nugget));
 
-        af.addRecipe(new ItemStack(BPBlocks.sapphire_glass, 4), new ItemStack(Blocks.glass, 4), TFCItems.gemSapphire);
+        for (ItemStack stack : OreDictionary.getOres("craftingBlueGem")) {
+            af.addRecipe(new ItemStack(BPBlocks.sapphire_glass, 4), new ItemStack(Blocks.glass, 4), new ItemStack(stack.getItem(), 1));
+        }
         af.addRecipe(new ItemStack(BPBlocks.reinforced_sapphire_glass, 1), new ItemStack(BPBlocks.sapphire_glass, 1), new ItemStack(
                 Blocks.obsidian, 5));
     }
